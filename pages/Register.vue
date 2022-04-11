@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import EmailLogin from "../components/EmailLogin.vue";
+import EmailRegister from "../components/EmailRegister.vue";
 definePageMeta({
   layout: "custom",
 });
 </script>
 <template>
 <div class="bg-black w-full min-h-screen">
-  <EmailLogin/>
+  <EmailRegister/>
 </div>
 </template>

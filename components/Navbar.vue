@@ -15,7 +15,7 @@ const handleLogOut = async () => {
 
         <div>
             <ul class="flex">
-                <li class="padding"><nuxt-link to="/">Home</nuxt-link></li>
+                <li class="padding"><nuxt-link to="/">{{user ? "Tasks" : "Home"}}</nuxt-link></li>
                 <li class="padding" v-if="!user"><nuxt-link to="/login">Login</nuxt-link></li>
                   <li class="padding" v-if="user" @click="handleLogOut"><nuxt-link to="/login">LogOut</nuxt-link></li>
             </ul>
